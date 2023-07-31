@@ -1,8 +1,6 @@
-# AWS Key Pair Terraform module
+# AWS Key Pair Terraform module for HPE Self-Paced Hybrid-cloud Terraform Lab
 
-Terraform module which creates EC2 key pair on AWS.
-
-[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+Terraform module which creates EC2 key pair on AWS for HPE Self-Paced Hybrid-cloud Terraform Lab
 
 ## Usage
 
@@ -66,16 +64,16 @@ module "key_pair" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.21 |
-| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 3.4 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.21 |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | >= 3.4 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | ~> 4.0 |
 
 ## Modules
 
@@ -118,10 +116,8 @@ No modules.
 | <a name="output_public_key_pem"></a> [public\_key\_pem](#output\_public\_key\_pem) | Public key data in PEM (RFC 1421) format |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Authors
-
-Module is maintained by [Anton Babenko](https://github.com/antonbabenko) with help from [these awesome contributors](https://github.com/terraform-aws-modules/terraform-aws-key-pair/graphs/contributors).
-
 ## License
+
+Module is copied from https://github.com/terraform-aws-modules/terraform-aws-key-pair
 
 Apache 2 Licensed. See [LICENSE](https://github.com/terraform-aws-modules/terraform-aws-key-pair/tree/master/LICENSE) for full details.
